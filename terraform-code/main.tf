@@ -1,3 +1,8 @@
+resource "random_id" "random"{
+
+  byte_length =  2
+}
+
 resource "github_repository" "mtc_repo" {
   name        = "mtc-repo"
   description = "My MTC Code"
@@ -24,3 +29,4 @@ resource "github_repository_file" "indexhtml" {
   content = "Hello Terraform"
   overwrite_on_create = true
 }
+

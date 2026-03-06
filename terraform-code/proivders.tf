@@ -4,6 +4,10 @@ terraform {
       source  = "integrations/github"
       version = "~> 6.0"
     }
+    random = {
+      source = "hashicorp/random"
+      version = "3.8.1"
+    }
   }
 }
 
@@ -12,3 +16,7 @@ provider "github" {
   owner = "khurramsyed"
 }
 
+
+provider "random" {
+  # Configuration options
+}
